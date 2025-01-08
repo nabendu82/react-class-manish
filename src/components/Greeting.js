@@ -1,9 +1,10 @@
 const Greeting = (props) => {
-    console.log(props)
+    const { name, year, children } = props;
+    
     return (
         <>
-            <h3>{props.name} created in {props.year}</h3>
-            <p>{props.children}</p>
+            <h3>{name} created in {year}</h3>
+            <p>{children}</p>
         </>
     )
 }
